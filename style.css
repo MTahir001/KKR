@@ -80,7 +80,7 @@ a {
   font-family: var(--ff-logo);
 }
 .text-primary {
-  color: var(--clr-primary);
+  color:#816522;
 }
 
 .about-us {
@@ -96,6 +96,7 @@ a {
 }
 
 .btn-group .fa {
+  color:#816522;
   width: 2rem;
   font-size: 2rem;
   margin: 1rem 1rem 0 0;

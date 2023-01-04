@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Saira:wght@100;300&display=swap");
+
+:root {
+  --clr-primary: goldenrod;
+  --clr-accent: #613b6b;
+
+  --ff-title: "Saira", sans-serif;
+  --ff-logo: "Kaushan Script", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--ff-title);
+  font-size: 1.25rem;
+  scroll-behavior: smooth;
+  background: linear-gradient(rgb(219, 202, 158), #a7a1a9);
+  text-align: center;
+}
+
+section {
+  margin: 1rem 2rem;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.navbar {
+  font-family: var(--ff-title);
+  color: var(--clr-primary);
+  background-color: #613b6b;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+
+  width: 18rem;
+  padding-right: 1rem;
+}
+nav li {
+  display: inline-block;
+  transition: all .5s;
+}
+a {
+  text-decoration: none;
+  color: var(--clr-primary);
+}
+.logo a {
+  padding: 0 1.5vw;
+  font-size: larger;
+}
+
+.hero h2 {
+  background: url(img/KKRbanner.png);
+  background-size: 110vw 70vh;
+  background-attachment: fixed;
+
+  display: inline-block;
+  color: var(--clr-primary);
+
+  font-family: var(--ff-logo);
+  font-size: 2rem;
+
+  height: 45vh;
+  width: 80vw;
+  margin: 1rem;
+  padding: 10vw;
+}
+.intro h2 {
+  font-family: var(--ff-logo);
+}
+.text-primary {
+  color:#816522;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  background: var(--clr-accent);
+  color: var(--clr-primary);
+}
+.about-us__intro {
+  align-self: center;
+}
+
+.btn-group .fa {
+  color:#816522;
+  width: 2rem;
+  font-size: 2rem;
+  margin: 1rem 1rem 0 0;
+}
+.btn-group .fa:hover {
+  color: var(--clr-accent);
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+}
+
+.products div {
+  display: inline-block;
+  width: 25vw;
+  min-width: 12rem;
+  margin-left: 1rem;
+  padding: 1rem;
+
+  background: var(--clr-accent);
+  color: var(--clr-primary);
+}
+
+.products div img {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+
+  transition: all 1s;
+}
+.products div img:hover {
+  scale:1.1;
+}
+.products div p:first-of-type {
+  font-size: larger;
+}
+.products div p:last-of-type {
+  font-size: smaller;
+}
+
+.btns a {
+  display: inline-block;
+  background: #613b6b;
+
+  height: auto;
+  width: fit-content;
+  margin: 1rem;
+  padding: 0 5px;
+}
+.btns a:hover {
+  color: var(--clr-accent);
+  background: var(--clr-primary);
+}
+.footer-nav li {
+  margin: 1rem 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+footer img {
+  display: inline-block;
+  width: 12vw;
+}
+.footer-social {
+  background: var(--clr-accent);
+  height: fit-content;
+}
+.footer-social li {
+  display: inline-block;
+  width: fit-content;
+  padding: 0 1rem;
+
+  transition: all 0.5s;
+}
+.footer-social a {
+  color: var(--clr-primary);
+}
+
+header li:hover,
+.footer-social li:hover {
+  transform: scale(1.2);
+}
+
+/* ------------responsive design------------ */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 1rem;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+    height: 30vh;
+  }
+  .about-us {
+    flex-direction: column;
+  }
+  .products {
+    flex-direction: column;
+  }
+  .products div {
+    width: 85vw;
+    height: fit-content;
+    margin: 1rem 0;
+    min-width: 15rem;
+  }
+  .footer-nav li {
+    flex-direction: column;
+    align-items: center;
+  }
+}
